@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HomeWork"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".HomeWork5"
+            android:exported="false" />
+        <activity
             android:name=".HomeWork4"
             android:exported="false" />
         <activity

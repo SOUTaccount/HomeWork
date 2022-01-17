@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private val btnHw2 by lazy { findViewById<Button>(R.id.btn_hw2) }
     private val btnHw3 by lazy { findViewById<Button>(R.id.btn_hw3) }
     private val btnHw4 by lazy { findViewById<Button>(R.id.btn_hw4) }
+    private val btnHw5 by lazy { findViewById<Button>(R.id.btn_hw5) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setClickListeners() {
+
+        btnHw5.setOnClickListener {
+            startActivity(Intent(this, HomeWork5::class.java))
+        }
+
         btnHw4.setOnClickListener {
             startActivity(Intent(this, HomeWork4::class.java))
         }
